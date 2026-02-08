@@ -10,7 +10,19 @@
     <meta property="og:title" content="ToJeMoje" />
     <meta property="og:description" content="Białka Tatrzańska — sprawdź dostępność i zarezerwuj pobyt." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johnmal96.github.io/ToJeMoje/" />
+    <meta property="og:image" content="https://johnmal96.github.io/ToJeMoje/preview.png" />
+    <meta property="og:image:secure_url" content="https://johnmal96.github.io/ToJeMoje/preview.png" />
+    <meta property="og:image:alt" content="ToJeMoje — Białka Tatrzańska" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ToJeMoje" />
+    <meta name="twitter:description" content="Białka Tatrzańska — sprawdź dostępność i zarezerwuj pobyt." />
+    <meta name="twitter:image" content="https://johnmal96.github.io/ToJeMoje/preview.png" />
+
+    <link rel="canonical" href="https://johnmal96.github.io/ToJeMoje/" />
+
+    <link rel="icon" type="image/png" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,14 +30,13 @@
       <div class="container">
         <div class="headerRow">
           <a class="brand" href="#top" aria-label="ToJeMoje home">
-            <span class="mark" aria-hidden="true"></span>
-            <span class="brandName">ToJeMoje</span>
+            <img class="brandLogo" src="logo.png" alt="ToJeMoje" />
           </a>
 
           <nav class="nav" aria-label="Primary">
+            <a href="#gallery">Galeria</a>
             <a href="#about">O nas</a>
             <a href="#amenities">Udogodnienia</a>
-            <a href="#gallery">Galeria</a>
             <a href="#location">Lokalizacja</a>
             <a href="#contact">Kontakt</a>
           </nav>
@@ -42,14 +53,18 @@
       <section class="hero">
         <div class="container">
           <div class="heroGrid">
-            <div>
+            <div class="heroLogoCol" aria-hidden="true">
+              <img class="heroLogo" src="logo.png" alt="" />
+            </div>
+
+            <div class="heroContent">
+              <h1 class="srOnly">ToJeMoje</h1>
+
               <div data-lang="pl">
-                <h1 class="hTitle">ToJeMoje</h1>
                 <p class="lead">Kameralne miejsce w Białce Tatrzańskiej — odpocznij wygodnie i zarezerwuj pobyt online.</p>
               </div>
               <div data-lang="en" style="display:none">
-                <h1 class="hTitle">ToJeMoje</h1>
-                <p class="lead">A cozy place in Białka Tatrzańska — relax comfortably and book your stay online.</p>
+                <p class="lead">An intimate place in Białka Tatrzańska - relax comfortably and book your stay online.</p>
               </div>
 
               <div class="ctaRow">
@@ -92,28 +107,30 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <aside class="card" aria-label="Quick info">
-              <div data-lang="pl">
-                <h2 class="h2">Szybkie info</h2>
-                <p class="sub">Strona jest krótka i autorska (nie kopiuje opisu z Booking). Główne CTA prowadzi do rezerwacji.</p>
-              </div>
-              <div data-lang="en" style="display:none">
-                <h2 class="h2">Quick info</h2>
-                <p class="sub">Copy is short and original (not taken from Booking). Primary CTA goes to booking.</p>
-              </div>
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="card">
+            <div data-lang="pl">
+              <h2 class="h2">Galeria</h2>
+              <p class="sub">Zdjęcia są wczytywane bezpośrednio z tego folderu.</p>
+            </div>
+            <div data-lang="en" style="display:none">
+              <h2 class="h2">Gallery</h2>
+              <p class="sub">Photos are loaded directly from this folder.</p>
+            </div>
 
-              <ul class="list">
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Galeria korzysta z Twoich zdjęć z tego folderu.</span>
-                  <span data-lang="en" style="display:none">Gallery uses your photos from this folder.</span>
-                </li>
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Uzupełnij telefon i email w sekcji Kontakt.</span>
-                  <span data-lang="en" style="display:none">Fill in phone and email in Contact.</span>
-                </li>
-              </ul>
-            </aside>
+            <div class="gallery" aria-label="Photo gallery">
+              <div class="photo"><img src="photos/336029348.jpg" alt="Tojemoje photo 1" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336029581.jpg" alt="Tojemoje photo 2" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336030972.jpg" alt="Tojemoje photo 3" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336032162.jpg" alt="Tojemoje photo 4" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033495.jpg" alt="Tojemoje photo 5" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033544.jpg" alt="Tojemoje photo 6" loading="lazy" /></div>
+            </div>
           </div>
         </div>
       </section>
@@ -166,30 +183,6 @@
                   <span data-lang="en" style="display:none">Fast Wi‑Fi (71 Mbps)</span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="gallery">
-        <div class="container">
-          <div class="card">
-            <div data-lang="pl">
-              <h2 class="h2">Galeria</h2>
-              <p class="sub">Zdjęcia są wczytywane bezpośrednio z tego folderu.</p>
-            </div>
-            <div data-lang="en" style="display:none">
-              <h2 class="h2">Gallery</h2>
-              <p class="sub">Photos are loaded directly from this folder.</p>
-            </div>
-
-            <div class="gallery" aria-label="Photo gallery">
-              <div class="photo"><img src="336029348.jpg" alt="Tojemoje photo 1" loading="lazy" /></div>
-              <div class="photo"><img src="336029581.jpg" alt="Tojemoje photo 2" loading="lazy" /></div>
-              <div class="photo"><img src="336030972.jpg" alt="Tojemoje photo 3" loading="lazy" /></div>
-              <div class="photo"><img src="336032162.jpg" alt="Tojemoje photo 4" loading="lazy" /></div>
-              <div class="photo"><img src="336033495.jpg" alt="Tojemoje photo 5" loading="lazy" /></div>
-              <div class="photo"><img src="336033544.jpg" alt="Tojemoje photo 6" loading="lazy" /></div>
             </div>
           </div>
         </div>
