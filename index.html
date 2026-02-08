@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>ToJeMoje — Białka Tatrzańska</title>
+    <meta name="google" content="notranslate" />
     <meta name="description" content="ToJeMoje — pobyt w Białce Tatrzańskiej. Sprawdź udogodnienia, zobacz galerię i zarezerwuj online." />
 
     <meta property="og:title" content="ToJeMoje" />
@@ -29,7 +30,7 @@
     <header class="header">
       <div class="container">
         <div class="headerRow">
-          <a class="brand" href="#top" aria-label="ToJeMoje home">
+          <a class="brand notranslate" translate="no" href="#top" aria-label="ToJeMoje home">
             <img class="brandLogo" src="logo.png" alt="ToJeMoje" />
           </a>
 
@@ -58,18 +59,21 @@
             </div>
 
             <div class="heroContent">
-              <h1 class="srOnly">ToJeMoje</h1>
+              <h1 class="srOnly notranslate" translate="no">ToJeMoje</h1>
 
               <div data-lang="pl">
-                <p class="lead">Kameralne miejsce w Białce Tatrzańskiej — odpocznij wygodnie i zarezerwuj pobyt online.</p>
+                <p class="lead">Tojemoje to spokojna baza wypadowa w Białce Tatrzańskiej — dobra na weekend, ferie albo dłuższy odpoczynek.</p>
               </div>
               <div data-lang="en" style="display:none">
-                <p class="lead">An intimate place in Białka Tatrzańska - relax comfortably and book your stay online.</p>
+                <p class="lead">Tojemoje is a peaceful base in Białka Tatrzańska — perfect for a weekend, holidays, or a longer stay.</p>
               </div>
 
               <div class="ctaRow">
                 <a class="btn btnPrimary" href="https://www.booking.com/hotel/pl/tojemoje.pl.html" target="_blank" rel="noreferrer">Book on Booking.com</a>
-                <a class="btn btnGhost" href="#contact">Contact</a>
+                <a class="btn btnGhost" href="#contact">
+                  <span data-lang="pl">Rezerwuj bezpośrednio</span>
+                  <span data-lang="en" style="display:none">Book directly</span>
+                </a>
               </div>
 
               <div class="card">
@@ -123,13 +127,41 @@
               <p class="sub">Photos are loaded directly from this folder.</p>
             </div>
 
-            <div class="gallery" aria-label="Photo gallery">
-              <div class="photo"><img src="photos/336029348.jpg" alt="Tojemoje photo 1" loading="lazy" /></div>
-              <div class="photo"><img src="photos/336029581.jpg" alt="Tojemoje photo 2" loading="lazy" /></div>
-              <div class="photo"><img src="photos/336030972.jpg" alt="Tojemoje photo 3" loading="lazy" /></div>
-              <div class="photo"><img src="photos/336032162.jpg" alt="Tojemoje photo 4" loading="lazy" /></div>
-              <div class="photo"><img src="photos/336033495.jpg" alt="Tojemoje photo 5" loading="lazy" /></div>
-              <div class="photo"><img src="photos/336033544.jpg" alt="Tojemoje photo 6" loading="lazy" /></div>
+            <div class="gallery" aria-label="Photo gallery" data-gallery data-collapsed="true" id="galleryGrid">
+              <div class="photo"><img src="photos/715042285.jpg" alt="Tojemoje photo 1" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336029348.jpg" alt="Tojemoje photo 2" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336029581.jpg" alt="Tojemoje photo 3" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336030972.jpg" alt="Tojemoje photo 4" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336032162.jpg" alt="Tojemoje photo 5" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033495.jpg" alt="Tojemoje photo 6" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033544.jpg" alt="Tojemoje photo 7" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033857.jpg" alt="Tojemoje photo 8" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033969.jpg" alt="Tojemoje photo 9" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033980.jpg" alt="Tojemoje photo 10" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336033984.jpg" alt="Tojemoje photo 11" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336034230.jpg" alt="Tojemoje photo 12" loading="lazy" /></div>
+              <div class="photo"><img src="photos/336034989.jpg" alt="Tojemoje photo 13" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715042287.jpg" alt="Tojemoje photo 14" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715042288.jpg" alt="Tojemoje photo 15" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715042292.jpg" alt="Tojemoje photo 16" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715042298.jpg" alt="Tojemoje photo 17" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715042301.jpg" alt="Tojemoje photo 18" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715094875.jpg" alt="Tojemoje photo 19" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715096631.jpg" alt="Tojemoje photo 20" loading="lazy" /></div>
+              <div class="photo"><img src="photos/715098089.jpg" alt="Tojemoje photo 21" loading="lazy" /></div>
+              <div class="photo"><img src="photos/791026277.jpg" alt="Tojemoje photo 22" loading="lazy" /></div>
+              <div class="photo"><img src="photos/791026414.jpg" alt="Tojemoje photo 23" loading="lazy" /></div>
+              <div class="photo"><img src="photos/791026497.jpg" alt="Tojemoje photo 24" loading="lazy" /></div>
+              <div class="photo"><img src="photos/797772698.jpg" alt="Tojemoje photo 25" loading="lazy" /></div>
+            </div>
+
+            <div class="galleryActions">
+              <button class="btn btnGhost" type="button" data-gallery-toggle aria-controls="galleryGrid" aria-expanded="false" data-expanded="false">
+                <span data-lang="pl" data-gallery-label="more">Więcej</span>
+                <span data-lang="pl" data-gallery-label="less">Mniej</span>
+                <span data-lang="en" data-gallery-label="more" style="display:none">More</span>
+                <span data-lang="en" data-gallery-label="less" style="display:none">Less</span>
+              </button>
             </div>
           </div>
         </div>
@@ -141,57 +173,19 @@
             <div class="card">
               <div data-lang="pl">
                 <h2 class="h2">O nas</h2>
-                <p class="sub">Tojemoje to spokojna baza wypadowa w Białce Tatrzańskiej — dobra na weekend, ferie albo dłuższy odpoczynek.</p>
+                <p class="sub">Obiekt Tojemoje, usytuowany w miejscowości Białka Tatrzańska, oferuje ogród, bezpłatny prywatny parking, taras oraz sprzęt do grillowania. Odległość ważnych miejsc od obiektu: Termy Bania – 1,2 km. Na miejscu znajduje się plac zabaw. Do dyspozycji Gości są również pokoje rodzinne. Oferta pensjonatu B&amp;B obejmuje bezpłatne Wi‑Fi, jak również płatny transfer lotniskowy.</p>
+                <p class="sub">W każdej opcji zakwaterowania w obiekcie zapewniono szafę, prywatną łazienkę, telewizor z płaskim ekranem, pościel, ręczniki oraz balkon z widokiem na ogród. We wszystkich opcjach zakwaterowania w obiekcie znajduje się prywatna łazienka z prysznicem i suszarką do włosów. Z niektórych opcji zakwaterowania roztacza się również widok na góry. Wszystkie opcje zakwaterowania wyposażone są w lodówkę.</p>
+                <p class="sub">W miejscowości Białka Tatrzańska i okolicy Goście obiektu mogą uprawiać rozmaite sporty, takie jak narciarstwo. Odległość ważnych miejsc od obiektu: Zamek w Niedzicy – 22 km, Dworzec PKP Zakopane – 23 km. Parom bardzo się podoba ta lokalizacja – za pobyt dla 2 osób oceniają ją na 9,8.</p>
               </div>
               <div data-lang="en" style="display:none">
                 <h2 class="h2">About</h2>
-                <p class="sub">Tojemoje is a calm base in Białka Tatrzańska — great for a weekend, holidays, or a longer reset.</p>
+                <p class="sub">Located in Białka Tatrzańska, Tojemoje offers a garden, free private parking, a terrace, and barbecue facilities. The Bania Thermal Baths are 1.2 km away. A playground is also available. Family rooms are also available. The bed and breakfast offers free Wi‑Fi and a paid airport shuttle.</p>
+                <p class="sub">Each accommodation includes a wardrobe, a private bathroom, a flat-screen TV, bed linen, towels, and a balcony with a garden view. All accommodations include a private bathroom with a shower and a hairdryer. Some rooms also offer mountain views. All accommodations are equipped with a refrigerator.</p>
+                <p class="sub">In Białka Tatrzańska and the surrounding area, guests can enjoy various sports activities, such as skiing. The Niedzica Castle is 22 km away and Zakopane Train Station is 23 km away. Couples love this location, giving it a 9.8 rating for a stay for two people.</p>
               </div>
-              <ul class="list">
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Adres: Środkowa 238 B, 34-405 Białka Tatrzańska</span>
-                  <span data-lang="en" style="display:none">Address: Środkowa 238 B, 34-405 Białka Tatrzańska</span>
-                </li>
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Sprawdź terminy i ceny na Booking.com.</span>
-                  <span data-lang="en" style="display:none">Check dates and prices on Booking.com.</span>
-                </li>
-              </ul>
             </div>
 
-            <div class="card" id="amenities">
-              <div data-lang="pl">
-                <h2 class="h2">Udogodnienia</h2>
-                <p class="sub">Najważniejsze rzeczy na start (edytuj listę według potrzeb):</p>
-              </div>
-              <div data-lang="en" style="display:none">
-                <h2 class="h2">Amenities</h2>
-                <p class="sub">A few starter highlights (edit as needed):</p>
-              </div>
-
-              <ul class="list">
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Bezpłatny parking</span>
-                  <span data-lang="en" style="display:none">Free parking</span>
-                </li>
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Pokoje rodzinne</span>
-                  <span data-lang="en" style="display:none">Family rooms</span>
-                </li>
-                <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span data-lang="pl">Szybkie Wi‑Fi (71 Mbps)</span>
-                  <span data-lang="en" style="display:none">Fast Wi‑Fi (71 Mbps)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="location">
-        <div class="container">
-          <div class="grid2">
-            <div class="card">
+            <div class="card" id="location">
               <div data-lang="pl">
                 <h2 class="h2">Lokalizacja</h2>
                 <p class="sub">Środkowa 238 B, 34-405 Białka Tatrzańska, Poland</p>
@@ -223,26 +217,116 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="card" id="contact">
+      <section class="section sectionAfterAbout">
+        <div class="container">
+          <div class="grid2">
+            <div class="card" id="amenities">
               <div data-lang="pl">
-                <h2 class="h2">Kontakt</h2>
-                <p class="sub">Podmień dane kontaktowe na właściwe (telefon/email).</p>
+                <h2 class="h2">Udogodnienia</h2>
               </div>
               <div data-lang="en" style="display:none">
-                <h2 class="h2">Contact</h2>
-                <p class="sub">Replace contact details with your real phone/email.</p>
+                <h2 class="h2">Amenities</h2>
               </div>
 
               <ul class="list">
                 <li class="item"><span class="badge" aria-hidden="true"></span>
-                  <span><strong style="color:var(--text)">Phone:</strong> <a href="tel:+48000000000">+48 000 000 000</a></span>
+                  <span data-lang="pl">Bezpłatny parking</span>
+                  <span data-lang="en" style="display:none">Free parking</span>
                 </li>
                 <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Pokoje rodzinne</span>
+                  <span data-lang="en" style="display:none">Family rooms</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Szybkie bezpłatne Wi‑Fi (71 Mb/s)</span>
+                  <span data-lang="en" style="display:none">Fast free Wi‑Fi (71 Mbps)</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Narciarstwo</span>
+                  <span data-lang="en" style="display:none">Skiing</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Pokoje dla niepalących</span>
+                  <span data-lang="en" style="display:none">Non-smoking rooms</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Transfer lotniskowy</span>
+                  <span data-lang="en" style="display:none">Airport shuttle</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Sprzęt do grillowania</span>
+                  <span data-lang="en" style="display:none">BBQ facilities</span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true"></span>
+                  <span data-lang="pl">Zestaw do parzenia kawy i herbaty we wszystkich pokojach</span>
+                  <span data-lang="en" style="display:none">Tea/coffee maker in all rooms</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card" id="contact">
+              <div data-lang="pl">
+                <h2 class="h2">Kontakt</h2>
+                <p class="sub">Napisz lub zadzwoń, aby zarezerwować bezpośrednio.</p>
+              </div>
+              <div data-lang="en" style="display:none">
+                <h2 class="h2">Contact</h2>
+                <p class="sub">Please reach out to book directly.</p>
+              </div>
+
+              <ul class="list">
+                <li class="item"><span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2l-1.3 1.3a16 16 0 0 0 6.9 6.9l1.3-1.3a2 2 0 0 1 2-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.8 2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                  <span><strong style="color:var(--text)">Phone:</strong> <a href="tel:+48607586221">+48 607 586 221</a></span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                    <path d="M4 6h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    <path d="m22 8-10 7L2 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
                   <span><strong style="color:var(--text)">Email:</strong> <a href="mailto:hello@tojemoje.pl">hello@tojemoje.pl</a></span>
                 </li>
-                <li class="item"><span class="badge" aria-hidden="true"></span>
+                <li class="item"><span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                    <path d="M12 22s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    <path d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                  <span>
+                    <strong style="color:var(--text)">
+                      <span data-lang="pl">Adres:</span>
+                      <span data-lang="en" style="display:none">Address:</span>
+                    </strong>
+                    Środkowa 238 B, 34-405 Białka Tatrzańska
+                  </span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                    <path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 1 0 7.1 7.1l1.6-1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
                   <span><strong style="color:var(--text)">Booking:</strong> <a href="https://www.booking.com/hotel/pl/tojemoje.pl.html" target="_blank" rel="noreferrer">booking.com/hotel/pl/tojemoje</a></span>
+                </li>
+                <li class="item"><span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                    <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v11A2.5 2.5 0 0 1 18.5 21h-13A2.5 2.5 0 0 1 3 18.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    <path d="M7 3v4M17 3v4M3 9h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                  <span>
+                    <span data-lang="pl">Sprawdź terminy i ceny na</span>
+                    <span data-lang="en" style="display:none">Check dates and prices on</span>
+                    <a href="https://www.booking.com/hotel/pl/tojemoje.pl.html" target="_blank" rel="noreferrer">Booking.com</a>.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -255,10 +339,11 @@
       <div class="container">
         <div class="footRow">
           <div>
-            <div style="font-weight:800;color:var(--text)">Tojemoje</div>
+            <div class="notranslate" translate="no" style="font-weight:800;color:var(--text)">ToJeMoje</div>
             <div style="margin-top:6px">Środkowa 238 B, 34-405 Białka Tatrzańska</div>
           </div>
           <div>
+            <img class="footLogo notranslate" translate="no" src="logo.png" alt="ToJeMoJe" loading="lazy" />
             <div data-lang="pl">© <span id="y"></span> Tojemoje. Wszelkie prawa zastrzeżone.</div>
             <div data-lang="en" style="display:none">© <span id="y2"></span> Tojemoje. All rights reserved.</div>
           </div>
