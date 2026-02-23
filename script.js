@@ -35,6 +35,29 @@
     }
   }
 
+  const mapPlaceholders = document.querySelectorAll('[data-map-placeholder]');
+  if (mapPlaceholders.length) {
+    mapPlaceholders.forEach((wrap) => {
+      const btn = wrap.querySelector('[data-map-load]');
+      const src = wrap.getAttribute('data-map-src') || '';
+      const title = wrap.getAttribute('data-map-title') || 'Map';
+      if (!btn || !src) return;
+
+      btn.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('title', title);
+        iframe.setAttribute('src', src);
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('loading', 'lazy');
+        iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+
+        const parent = wrap.parentElement;
+        if (!parent) return;
+        parent.replaceChildren(iframe);
+      });
+    });
+  }
+
   const lightbox = document.querySelector('[data-lightbox]');
   if (gallery && lightbox) {
     const thumbnails = Array.from(gallery.querySelectorAll('img'));

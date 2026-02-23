@@ -192,13 +192,9 @@
                 <a class="btn btnGhost" href="https://www.google.com/maps/search/?api=1&query=%C5%9Arodkowa%20238%20B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska" target="_blank" rel="noreferrer">Otwórz w Mapach</a>
 
                 <div class="mapWrap" aria-label="Mapa">
-                  <iframe
-                    title="Tojemoje map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.4125037544734!2d20.101340654481984!3d49.3933021376147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f095ffcf206f%3A0x12d91233321e08d4!2s%C5%9Arodkowa%20238B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska!5e0!3m2!1sen!2spl!4v1770540492705!5m2!1sen!2spl"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  <div class="mapPlaceholder" data-map-placeholder data-map-title="Tojemoje map" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.4125037544734!2d20.101340654481984!3d49.3933021376147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f095ffcf206f%3A0x12d91233321e08d4!2s%C5%9Arodkowa%20238B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska!5e0!3m2!1sen!2spl!4v1770540492705!5m2!1sen!2spl">
+                    <button class="btn btnGhost" type="button" data-map-load>Załaduj mapę</button>
+                  </div>
                 </div>
               </div>
               <div data-lang="en" style="display:none">
@@ -207,13 +203,9 @@
                 <a class="btn btnGhost" href="https://www.google.com/maps/search/?api=1&query=%C5%9Arodkowa%20238%20B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska" target="_blank" rel="noreferrer">Open in Maps</a>
 
                 <div class="mapWrap" aria-label="Map">
-                  <iframe
-                    title="Tojemoje map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.4125037544734!2d20.101340654481984!3d49.3933021376147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f095ffcf206f%3A0x12d91233321e08d4!2s%C5%9Arodkowa%20238B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska!5e0!3m2!1sen!2spl!4v1770540492705!5m2!1sen!2spl"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  <div class="mapPlaceholder" data-map-placeholder data-map-title="Tojemoje map" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.4125037544734!2d20.101340654481984!3d49.3933021376147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f095ffcf206f%3A0x12d91233321e08d4!2s%C5%9Arodkowa%20238B%2C%2034-405%20Bia%C5%82ka%20Tatrza%C5%84ska!5e0!3m2!1sen!2spl!4v1770540492705!5m2!1sen!2spl">
+                    <button class="btn btnGhost" type="button" data-map-load>Load map</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -341,6 +333,8 @@
           <div>
             <div class="notranslate" translate="no" style="font-weight:800;color:var(--text)">ToJeMoje</div>
             <div style="margin-top:6px">Środkowa 238 B, 34-405 Białka Tatrzańska</div>
+            <div data-lang="pl" style="margin-top:10px">Prywatność: strona zapisuje wybrany język w <span class="notranslate" translate="no">localStorage</span>. Mapa Google ładuje się dopiero po kliknięciu i może używać plików cookie.</div>
+            <div data-lang="en" style="display:none;margin-top:10px">Privacy: the site stores your language choice in <span class="notranslate" translate="no">localStorage</span>. Google Maps loads only after you click and may use cookies.</div>
           </div>
           <div>
             <img class="footLogo notranslate" translate="no" src="logo.png" alt="ToJeMoJe" loading="lazy" />
