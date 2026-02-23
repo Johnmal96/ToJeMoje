@@ -351,6 +351,16 @@
       </div>
     </footer>
 
+    <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="lightboxBackdrop" data-lightbox-backdrop aria-hidden="true"></div>
+      <div class="lightboxInner" role="document">
+        <button class="btn btnGhost lightboxClose" type="button" data-lightbox-close aria-label="Close">×</button>
+        <button class="btn btnGhost lightboxNav lightboxPrev" type="button" data-lightbox-prev aria-label="Previous photo">‹</button>
+        <img class="lightboxImg" data-lightbox-img alt="" />
+        <button class="btn btnGhost lightboxNav lightboxNext" type="button" data-lightbox-next aria-label="Next photo">›</button>
+      </div>
+    </div>
+
     <script src="script.js"></script>
     <script>
       (function(){

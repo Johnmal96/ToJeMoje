@@ -193,7 +193,64 @@ button[data-gallery-toggle][data-expanded="true"] [data-gallery-label="less"]{di
   background:rgba(111,120,115,.10);
   aspect-ratio: 4 / 3;
 }
+.photo{cursor:pointer}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+body.lightboxOpen{overflow:hidden}
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:60;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.lightbox:not([hidden]){display:flex}
+
+.lightboxBackdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(65,56,50,.86);
+}
+
+.lightboxInner{
+  position:relative;
+  z-index:1;
+  width:min(100%, 980px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.lightboxImg{
+  width:100%;
+  max-height:calc(100vh - 110px);
+  object-fit:contain;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:var(--panel);
+}
+
+.lightboxClose{
+  position:fixed;
+  top:16px;
+  right:16px;
+  z-index:2;
+}
+
+.lightboxNav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+.lightboxPrev{left:0}
+.lightboxNext{right:0}
+
+@media (max-width:520px){
+  .lightbox{padding:16px}
+}
 
 .mapWrap{
   margin-top:14px;
